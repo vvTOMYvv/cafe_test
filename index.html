@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T29ZWPH');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>亜比律珈琲店</title>
+  <link rel="stylesheet" media="print, screen and (min-width: 768px)" href="stylesheets/style.css">
+  <link rel="stylesheet" media="print, screen and (max-width: 768px)" href="stylesheets/style_sp.css">
+  <script>
+    //今日の日付データを変数hidukeに格納
+    var hiduke=new Date(); 
+    var date = new Date().getTime();
+    var timest = new Date(date).toString();
+    //年・月・日・曜日を取得する
+    var year = hiduke.getFullYear();
+    var month = hiduke.getMonth()+1;
+    var day = hiduke.getDate();
+    var time = timest.split(' ')[4]
+    var kyou = year+"_"+month+"_"+day;
+      function purchaseEvent() {
+            dataLayer.push({
+                'event': "purchase",
+                'transaction_id': "test_"+kyou+"_"+time,
+                'value': 1000,
+                'quantity': 1
+            });
+      };
+    //あとはどっかのリンクとかボタンにonclickでpurchaseEvent()を実装
+    </script>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T29ZWPH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- 見出し　Start-->
+  <header class="head">
+    <h1 class="head__logo">
+      <img src="image/logo.svg" alt="亞比律珈琲店のロゴ">
+    </h1>
+    <div class="head__box">
+      <img class="head__mv head__pc" src="image/mv.png" alt="店内の様子">
+      <img class="head__mv head__sp" src="image/mv_sp.png" alt="店内の様子">
+    </div>
+  </header>
+  <!-- 見出し　End-->
+
+  <main class="main">
+    <!-- コーヒーエリア　Start-->
+    <div class="item">
+      <div class="item__box">
+        <img class="item__img" src="image/coffee.png" alt="自家焙煎のおいしいコーヒー">
+      </div>
+      <div class="item__content">
+        <h2 class="item__title">
+          自家焙煎のおいしいコーヒー
+        </h2>
+        <p class="item__text">
+          厳選した豆を時間をかけて焙煎。深いコク、すっきりとした酸味をお楽しみください。厳選した豆を時間をかけて焙煎。深いコク、すっきりとした酸味をお楽しみください。厳選した豆を時間をかけて焙煎。深いコク、すっきりとした酸味をお楽しみください。
+        </p>
+      </div>
+    </div>
+    <!-- コーヒーエリア　End-->
+
+    <!-- ランチエリア　Start-->
+    <div class="item">
+      <div class="item__content item__content--02">
+        <h2 class="item__title">
+          オーガニックランチ
+        </h2>
+        <p class="item__text">
+          契約農家で栽培された無農薬野菜をふんだんに使ったサラダランチ。ビタミンも豊富です。契約農家で栽培された無農薬野菜をふんだんに使ったサラダランチ。ビタミンも豊富です。契約農家で栽培された無農薬野菜をふんだんに使ったサラダランチ。ビタミンも豊富です。
+        </p>
+      </div>
+      <div class="item__box item__box--02">
+        <img class="item__img item__img--02" src="image/salad.png" alt="オーガニックランチ">
+      </div>
+    </div>
+    <!-- ランチエリア　End-->
+
+    <!-- お知らせ　Start-->
+    <div class="information">
+      <h3 class="information__title">
+        お知らせ
+      </h3>
+      <table class="information__content">
+
+        <!-- テキスト1 -->
+        <tr class="information__box">
+          <th class="information__date">
+            2019.10.10
+          </th>
+          <td class="information__text">
+            <a class="information__link" href="">秋の新作スイーツが始まりました！和栗のモンブラン・パンプキンタルトの他、季節のおすすめをご用意しています。</a>
+          </td>
+        </tr>
+
+        <!-- テキスト2 -->
+        <tr class="information__box">
+          <th class="information__date">
+            2019.09.15
+          </th>
+          <td class="information__text">
+            <a class="information__link" href="" onclick="purchaseEvent()">臨時休業のお知らせ。9月10日はお休みさせていただきます。</a>
+          </td>
+        </tr>
+
+        <!-- テキスト3 -->
+        <tr class="information__box">
+          <th class="information__date">
+            2019.07.18
+          </th>
+          <td class="information__text">
+            <a class="information__link" href="">テイクアウトメニューが新しくなりました。</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- お知らせ　End-->
+
+    <!-- 補足　Start-->
+    <div class="foot">
+      <img class="foot__logo" src="image/logo.svg" alt="亜比律珈琲店のロゴ">
+      <p class="foot__address">東京都渋谷区神宮前六丁目27番8号　京セラ原宿ビル</p>
+
+      <!-- instagram -->
+      <ul class="foot__box">
+        <li class="foot__list">
+          <a class="foot__touch" href="">
+            <img class="foot__icon" src="image/instagram.svg" alt="instagram_icon">
+            <span class="foot__text">＠appicafe.jp</span>
+          </a>
+        </li>
+
+      <!-- Twitter -->
+        <li class="foot__list">
+          <a class="foot__touch"  href="">
+            <img class="foot__icon" src="image/twitter.svg" alt="twitter_icon">
+            <span class="foot__text">＠appicafe.JP</span>
+          </a>
+        </li>
+      </ul>
+      <!-- 補足　End-->
+    </div>
+  </main>
+
+  <footer class="footer">＠Appicafe</footer>
+
+</body>
+</html>
